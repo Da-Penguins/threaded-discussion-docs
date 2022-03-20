@@ -32,6 +32,10 @@ layout: layouts/post.njk
 7. comments-- UUID
 8. Get all comments
 
+#### Database Schema
+[See DBDiagram ER diagram for relational database schema](https://dbdiagram.io/d/623369b20ac038740c529b9c) 
+![Diagram Image](https://i.imgur.com/mFoLAaT.png)
+
 ### Questions ###
 - What is the best way to tie comments to each other in the database?
 - What can we use from the Nikki's work vs. what will we need to reinvent? 
