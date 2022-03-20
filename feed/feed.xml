@@ -3,7 +3,7 @@
 	<title>Threaded Discussion Documentation</title>
 	<subtitle>Documentation for Da-Penguins&#39; project: Threaded Discussion.</subtitle>
 	
-	<link href="https://example.com/feed/feed.xml" rel="self"/>
+	<link href="https://example.com/threaded-discussion-docs/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
 	<updated>2022-03-20T00:00:00Z</updated>
 	<id>https://example.com/</id>
@@ -14,9 +14,9 @@
 	
 	<entry>
 		<title>Our Project</title>
-		<link href="https://example.com/posts/our-project/"/>
+		<link href="https://example.com/threaded-discussion-docs/posts/our-project/"/>
 		<updated>2022-03-20T00:00:00Z</updated>
-		<id>https://example.com/posts/our-project/</id>
+		<id>https://example.com/threaded-discussion-docs/posts/our-project/</id>
 		<content type="html">&lt;p&gt;Hello! Our group, Da-Penguins, is dedicated to creating open source projects to allow for a cheaper and easier way of using technology.&lt;/p&gt;
 &lt;p&gt;We are currently creating a “threaded-discussion” web component to facilitate discussion via comments and replies. This web component will be a discussion board where messages can be posted as replies or as new comments. A user will then be able to edit them and even delete them if necessary. Each thread will come with a UUID (universally unique identifier) in order to allow for embedding of the component.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;You can find the GitHub issue, with more specifics, here:&lt;/em&gt; &lt;a href=&quot;https://github.com/elmsln/issues/issues/960&quot;&gt;https://github.com/elmsln/issues/issues/960&lt;/a&gt;.&lt;/p&gt;
@@ -25,14 +25,14 @@
 	
 	<entry>
 		<title>Notes</title>
-		<link href="https://example.com/posts/notes/"/>
+		<link href="https://example.com/threaded-discussion-docs/posts/notes/"/>
 		<updated>2022-03-20T00:00:00Z</updated>
-		<id>https://example.com/posts/notes/</id>
-		<content type="html">&lt;h2 id=&quot;week-10&quot; tabindex=&quot;-1&quot;&gt;Week 10 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#week-10&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;initial-mock-up&quot; tabindex=&quot;-1&quot;&gt;Initial Mock-up &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#initial-mock-up&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+		<id>https://example.com/threaded-discussion-docs/posts/notes/</id>
+		<content type="html">&lt;h2 id=&quot;week-10&quot; tabindex=&quot;-1&quot;&gt;Week 10 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-10&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;initial-mock-up&quot; tabindex=&quot;-1&quot;&gt;Initial Mock-up &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#initial-mock-up&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/48635853/159184135-4fe54c8c-8fd3-4602-a754-17766fb57065.jpg&quot; alt=&quot;mockup&quot; /&gt;&lt;/p&gt;
-&lt;h3 id=&quot;details&quot; tabindex=&quot;-1&quot;&gt;Details &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#details&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
-&lt;h4 id=&quot;visual-changes&quot; tabindex=&quot;-1&quot;&gt;Visual Changes &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#visual-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h3 id=&quot;details&quot; tabindex=&quot;-1&quot;&gt;Details &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#details&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;visual-changes&quot; tabindex=&quot;-1&quot;&gt;Visual Changes &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#visual-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;Add post more visible&lt;/li&gt;
 &lt;li&gt;Padding&lt;/li&gt;
@@ -41,7 +41,7 @@
 &lt;li&gt;Edit/delete/reply&lt;/li&gt;
 &lt;li&gt;Call BE to get comments&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&quot;backend-changes&quot; tabindex=&quot;-1&quot;&gt;Backend Changes &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#backend-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;backend-changes&quot; tabindex=&quot;-1&quot;&gt;Backend Changes &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#backend-changes&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;Delete post-main-- content unavliable/replys stay&lt;/li&gt;
 &lt;li&gt;Delete reply== gone from the post-main&lt;/li&gt;
@@ -52,12 +52,15 @@
 &lt;li&gt;comments-- UUID&lt;/li&gt;
 &lt;li&gt;Get all comments&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;questions&quot; tabindex=&quot;-1&quot;&gt;Questions &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#questions&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;database-schema&quot; tabindex=&quot;-1&quot;&gt;Database Schema &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#database-schema&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://dbdiagram.io/d/623369b20ac038740c529b9c&quot;&gt;See DBDiagram ER diagram for relational database schema&lt;/a&gt;&lt;br /&gt;
+&lt;img src=&quot;https://i.imgur.com/mFoLAaT.png&quot; alt=&quot;Diagram Image&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;questions&quot; tabindex=&quot;-1&quot;&gt;Questions &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#questions&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;What is the best way to tie comments to each other in the database?&lt;/li&gt;
 &lt;li&gt;What can we use from the Nikki&#39;s work vs. what will we need to reinvent?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;next-steps&quot; tabindex=&quot;-1&quot;&gt;Next Steps &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/notes/#next-steps&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;next-steps&quot; tabindex=&quot;-1&quot;&gt;Next Steps &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#next-steps&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Continue examining Nikki&#39;s code to determine what can/should be used in our work.&lt;/li&gt;
 &lt;li&gt;Begin fledging out design and initial backend.&lt;/li&gt;
@@ -67,12 +70,12 @@
 	
 	<entry>
 		<title>Links</title>
-		<link href="https://example.com/posts/git-links/"/>
+		<link href="https://example.com/threaded-discussion-docs/posts/git-links/"/>
 		<updated>2022-03-20T00:00:00Z</updated>
-		<id>https://example.com/posts/git-links/</id>
-		<content type="html">&lt;h2 id=&quot;threaded-discussion-fork&quot; tabindex=&quot;-1&quot;&gt;threaded-discussion Fork &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/git-links/#threaded-discussion-fork&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<id>https://example.com/threaded-discussion-docs/posts/git-links/</id>
+		<content type="html">&lt;h2 id=&quot;threaded-discussion-fork&quot; tabindex=&quot;-1&quot;&gt;threaded-discussion Fork &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/git-links/#threaded-discussion-fork&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;threaded-discussion&#39;s forked GitHub repository can be found &lt;strong&gt;&lt;a href=&quot;https://github.com/liljimmyk99/threaded-discussion&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;threaded-discussion-docs-repository&quot; tabindex=&quot;-1&quot;&gt;threaded-discussion-docs Repository &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/posts/git-links/#threaded-discussion-docs-repository&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;threaded-discussion-docs-repository&quot; tabindex=&quot;-1&quot;&gt;threaded-discussion-docs Repository &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/git-links/#threaded-discussion-docs-repository&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The GitHub repository for threaded-discussion&#39;s documentation can be found &lt;strong&gt;&lt;a href=&quot;https://github.com/Da-Penguins/threaded-discussion-docs&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 </content>
 	</entry>
