@@ -8,6 +8,13 @@ tags:
 layout: layouts/post.njk
 ---
 
+## Week 11 ##
+### Comment Workflow ###
+![Comment-workflow-diagram](https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png)
+### Reply Workflow ###
+![Reply-userflow-diagram](https://user-images.githubusercontent.com/48635853/160300745-cb69a590-b35b-4a5f-abbd-390a0f993d2f.png)
+
+
 ## Week 10 ##
 ### Initial Mock-up ###
 ![mockup](https://user-images.githubusercontent.com/48635853/159184135-4fe54c8c-8fd3-4602-a754-17766fb57065.jpg)
