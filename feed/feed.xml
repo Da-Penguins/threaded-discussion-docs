@@ -28,7 +28,12 @@
 		<link href="https://example.com/threaded-discussion-docs/posts/notes/"/>
 		<updated>2022-03-20T00:00:00Z</updated>
 		<id>https://example.com/threaded-discussion-docs/posts/notes/</id>
-		<content type="html">&lt;h2 id=&quot;week-10&quot; tabindex=&quot;-1&quot;&gt;Week 10 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-10&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<content type="html">&lt;h2 id=&quot;week-11&quot; tabindex=&quot;-1&quot;&gt;Week 11 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-11&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;comment-workflow&quot; tabindex=&quot;-1&quot;&gt;Comment Workflow &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#comment-workflow&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png&quot; alt=&quot;Comment-workflow-diagram&quot; /&gt;&lt;/p&gt;
+&lt;h3 id=&quot;reply-workflow&quot; tabindex=&quot;-1&quot;&gt;Reply Workflow &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#reply-workflow&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/48635853/160300745-cb69a590-b35b-4a5f-abbd-390a0f993d2f.png&quot; alt=&quot;Reply-userflow-diagram&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;week-10&quot; tabindex=&quot;-1&quot;&gt;Week 10 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-10&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;initial-mock-up&quot; tabindex=&quot;-1&quot;&gt;Initial Mock-up &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#initial-mock-up&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/48635853/159184135-4fe54c8c-8fd3-4602-a754-17766fb57065.jpg&quot; alt=&quot;mockup&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;details&quot; tabindex=&quot;-1&quot;&gt;Details &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#details&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
