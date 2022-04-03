@@ -28,7 +28,11 @@
 		<link href="https://example.com/threaded-discussion-docs/posts/notes/"/>
 		<updated>2022-03-20T00:00:00Z</updated>
 		<id>https://example.com/threaded-discussion-docs/posts/notes/</id>
-		<content type="html">&lt;h2 id=&quot;week-11&quot; tabindex=&quot;-1&quot;&gt;Week 11 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-11&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<content type="html">&lt;h2 id=&quot;week-12&quot; tabindex=&quot;-1&quot;&gt;Week 12 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-12&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;api-documentation&quot; tabindex=&quot;-1&quot;&gt;API Documentation &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#api-documentation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on &lt;a href=&quot;https://da-penguins.stoplight.io/docs/threaded-discussion&quot;&gt;stoplight&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;work-completed-this-week&quot; tabindex=&quot;-1&quot;&gt;Work Completed This Week &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#work-completed-this-week&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;week-11&quot; tabindex=&quot;-1&quot;&gt;Week 11 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-11&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;comment-workflow&quot; tabindex=&quot;-1&quot;&gt;Comment Workflow &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#comment-workflow&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png&quot; alt=&quot;Comment-workflow-diagram&quot; /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;reply-workflow&quot; tabindex=&quot;-1&quot;&gt;Reply Workflow &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#reply-workflow&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
