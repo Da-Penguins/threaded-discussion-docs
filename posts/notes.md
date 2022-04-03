@@ -8,6 +8,13 @@ tags:
 layout: layouts/post.njk
 ---
 
+## Week 12 ##
+### API Documentation ###
+OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on [stoplight](https://da-penguins.stoplight.io/docs/threaded-discussion).
+
+### Work Completed This Week ###
+
+
 ## Week 11 ##
 ### Comment Workflow ###
 ![Comment-workflow-diagram](https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png)
