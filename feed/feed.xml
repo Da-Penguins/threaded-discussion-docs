@@ -5,7 +5,7 @@
 	
 	<link href="https://example.com/threaded-discussion-docs/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
-	<updated>2022-03-20T00:00:00Z</updated>
+	<updated>2022-04-03T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Da-Penguins</name>
@@ -13,25 +13,35 @@
 	</author>
 	
 	<entry>
-		<title>Our Project</title>
-		<link href="https://example.com/threaded-discussion-docs/posts/our-project/"/>
-		<updated>2022-03-20T00:00:00Z</updated>
-		<id>https://example.com/threaded-discussion-docs/posts/our-project/</id>
-		<content type="html">&lt;p&gt;Hello! Our group, Da-Penguins, is dedicated to creating open source projects to allow for a cheaper and easier way of using technology.&lt;/p&gt;
-&lt;p&gt;We are currently creating a “threaded-discussion” web component to facilitate discussion via comments and replies. This web component will be a discussion board where messages can be posted as replies or as new comments. A user will then be able to edit them and even delete them if necessary. Each thread will come with a UUID (universally unique identifier) in order to allow for embedding of the component.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;You can find the GitHub issue, with more specifics, here:&lt;/em&gt; &lt;a href=&quot;https://github.com/elmsln/issues/issues/960&quot;&gt;https://github.com/elmsln/issues/issues/960&lt;/a&gt;.&lt;/p&gt;
-</content>
-	</entry>
-	
-	<entry>
 		<title>Notes</title>
 		<link href="https://example.com/threaded-discussion-docs/posts/notes/"/>
-		<updated>2022-03-20T00:00:00Z</updated>
+		<updated>2022-04-03T00:00:00Z</updated>
 		<id>https://example.com/threaded-discussion-docs/posts/notes/</id>
 		<content type="html">&lt;h2 id=&quot;week-12&quot; tabindex=&quot;-1&quot;&gt;Week 12 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-12&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;api-documentation&quot; tabindex=&quot;-1&quot;&gt;API Documentation &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#api-documentation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on &lt;a href=&quot;https://da-penguins.stoplight.io/docs/threaded-discussion&quot;&gt;stoplight&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&quot;work-completed-this-week&quot; tabindex=&quot;-1&quot;&gt;Work Completed This Week &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#work-completed-this-week&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h4 id=&quot;backend:&quot; tabindex=&quot;-1&quot;&gt;Backend: &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#backend:&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Added backend logic for 4 CRUD related operations for each comment
+&lt;ul&gt;
+&lt;li&gt;Create &lt;code&gt;/submit-comment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Read &lt;code&gt;/get-comment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Update &lt;code&gt;/edit-comment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Delete &lt;code&gt;/delete-comment&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added Additional &#39;Like Comment&#39; backend API logic &lt;code&gt;/like-comment&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Created &lt;code&gt;/auth&lt;/code&gt; API for future implementation of JWT authentication on each API endpoint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;apipm:&quot; tabindex=&quot;-1&quot;&gt;API/PM: &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#apipm:&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Create OpenAPI specs on Stoplight for all API endpoints and database models.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;frontend:&quot; tabindex=&quot;-1&quot;&gt;Frontend: &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#frontend:&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Continue development of user interface, including setup of base comment structure.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&quot;week-11&quot; tabindex=&quot;-1&quot;&gt;Week 11 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-11&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;comment-workflow&quot; tabindex=&quot;-1&quot;&gt;Comment Workflow &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#comment-workflow&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png&quot; alt=&quot;Comment-workflow-diagram&quot; /&gt;&lt;/p&gt;
@@ -74,6 +84,17 @@
 &lt;li&gt;Continue examining Nikki&#39;s code to determine what can/should be used in our work.&lt;/li&gt;
 &lt;li&gt;Begin fledging out design and initial backend.&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Our Project</title>
+		<link href="https://example.com/threaded-discussion-docs/posts/our-project/"/>
+		<updated>2022-03-20T00:00:00Z</updated>
+		<id>https://example.com/threaded-discussion-docs/posts/our-project/</id>
+		<content type="html">&lt;p&gt;Hello! Our group, Da-Penguins, is dedicated to creating open source projects to allow for a cheaper and easier way of using technology.&lt;/p&gt;
+&lt;p&gt;We are currently creating a “threaded-discussion” web component to facilitate discussion via comments and replies. This web component will be a discussion board where messages can be posted as replies or as new comments. A user will then be able to edit them and even delete them if necessary. Each thread will come with a UUID (universally unique identifier) in order to allow for embedding of the component.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;You can find the GitHub issue, with more specifics, here:&lt;/em&gt; &lt;a href=&quot;https://github.com/elmsln/issues/issues/960&quot;&gt;https://github.com/elmsln/issues/issues/960&lt;/a&gt;.&lt;/p&gt;
 </content>
 	</entry>
 	

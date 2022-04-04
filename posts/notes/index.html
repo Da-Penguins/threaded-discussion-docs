@@ -25,12 +25,33 @@
       <h1>Notes</h1>
 <h3><i>Notes taken in threaded-discussion&#39;s early design phases.</i></h3>
 
-<time datetime="2022-03-20">20 Mar 2022</time><a href="/threaded-discussion-docs/tags/info/" class="post-tag">Info</a><a href="/threaded-discussion-docs/tags/design/" class="post-tag">Design</a>
+<time datetime="2022-04-03">03 Apr 2022</time><a href="/threaded-discussion-docs/tags/info/" class="post-tag">Info</a><a href="/threaded-discussion-docs/tags/design/" class="post-tag">Design</a>
 
 <h2 id="week-12" tabindex="-1">Week 12 <a class="direct-link" href="#week-12" aria-hidden="true">#</a></h2>
 <h3 id="api-documentation" tabindex="-1">API Documentation <a class="direct-link" href="#api-documentation" aria-hidden="true">#</a></h3>
 <p>OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on <a href="https://da-penguins.stoplight.io/docs/threaded-discussion">stoplight</a>.</p>
 <h3 id="work-completed-this-week" tabindex="-1">Work Completed This Week <a class="direct-link" href="#work-completed-this-week" aria-hidden="true">#</a></h3>
+<h4 id="backend:" tabindex="-1">Backend: <a class="direct-link" href="#backend:" aria-hidden="true">#</a></h4>
+<ul>
+<li>Added backend logic for 4 CRUD related operations for each comment
+<ul>
+<li>Create <code>/submit-comment</code></li>
+<li>Read <code>/get-comment</code></li>
+<li>Update <code>/edit-comment</code></li>
+<li>Delete <code>/delete-comment</code></li>
+</ul>
+</li>
+<li>Added Additional 'Like Comment' backend API logic <code>/like-comment</code></li>
+<li>Created <code>/auth</code> API for future implementation of JWT authentication on each API endpoint</li>
+</ul>
+<h4 id="apipm:" tabindex="-1">API/PM: <a class="direct-link" href="#apipm:" aria-hidden="true">#</a></h4>
+<ul>
+<li>Create OpenAPI specs on Stoplight for all API endpoints and database models.</li>
+</ul>
+<h4 id="frontend:" tabindex="-1">Frontend: <a class="direct-link" href="#frontend:" aria-hidden="true">#</a></h4>
+<ul>
+<li>Continue development of user interface, including setup of base comment structure.</li>
+</ul>
 <h2 id="week-11" tabindex="-1">Week 11 <a class="direct-link" href="#week-11" aria-hidden="true">#</a></h2>
 <h3 id="comment-workflow" tabindex="-1">Comment Workflow <a class="direct-link" href="#comment-workflow" aria-hidden="true">#</a></h3>
 <p><img src="https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png" alt="Comment-workflow-diagram"></p>
@@ -75,7 +96,7 @@
 </ul>
 
 <hr>
-<ul><li>Next: <a href="/threaded-discussion-docs/posts/our-project/">Our Project</a></li><li>Previous: <a href="/threaded-discussion-docs/posts/git-links/">Links</a></li>
+<ul><li>Previous: <a href="/threaded-discussion-docs/posts/our-project/">Our Project</a></li>
 </ul>
 
     </main>
