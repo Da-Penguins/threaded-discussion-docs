@@ -1,7 +1,7 @@
 ---
 title: Notes
 description: Notes taken in threaded-discussion's early design phases. 
-date: 2022-03-20
+date: 2022-04-03
 tags:
   - Info
   - Design
@@ -13,8 +13,20 @@ layout: layouts/post.njk
 OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on [stoplight](https://da-penguins.stoplight.io/docs/threaded-discussion).
 
 ### Work Completed This Week ###
+#### Backend: ####
+- Added backend logic for 4 CRUD related operations for each comment
+  - Create `/submit-comment`
+  - Read `/get-comment`
+  - Update `/edit-comment`
+  - Delete `/delete-comment`
+- Added Additional 'Like Comment' backend API logic `/like-comment`
+- Created `/auth` API for future implementation of JWT authentication on each API endpoint
 
+#### API/PM: ####
+- Create OpenAPI specs on Stoplight for all API endpoints and database models.
 
+#### Frontend: ####
+- Continue development of user interface, including setup of base comment structure.
 ## Week 11 ##
 ### Comment Workflow ###
 ![Comment-workflow-diagram](https://user-images.githubusercontent.com/48635853/160300983-77c89afa-554d-4e28-8648-06e6f9034c39.png)
