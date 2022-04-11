@@ -5,7 +5,7 @@
 	
 	<link href="https://example.com/threaded-discussion-docs/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
-	<updated>2022-04-03T00:00:00Z</updated>
+	<updated>2022-04-10T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Da-Penguins</name>
@@ -15,12 +15,21 @@
 	<entry>
 		<title>Notes</title>
 		<link href="https://example.com/threaded-discussion-docs/posts/notes/"/>
-		<updated>2022-04-03T00:00:00Z</updated>
+		<updated>2022-04-10T00:00:00Z</updated>
 		<id>https://example.com/threaded-discussion-docs/posts/notes/</id>
-		<content type="html">&lt;h2 id=&quot;week-12&quot; tabindex=&quot;-1&quot;&gt;Week 12 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-12&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<content type="html">&lt;h2 id=&quot;week-13&quot; tabindex=&quot;-1&quot;&gt;Week 13 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-13&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;work-completed-this-week&quot; tabindex=&quot;-1&quot;&gt;Work Completed This Week &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#work-completed-this-week&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Significant updates to user interface&lt;/li&gt;
+&lt;li&gt;Implemented user authentication and session validation via &lt;code&gt;/auth&lt;/code&gt; endpoint&lt;/li&gt;
+&lt;li&gt;Tie user credential checks into other API endpoints&lt;/li&gt;
+&lt;li&gt;API Documentation is complete and available &lt;strong&gt;&lt;em&gt;&lt;a href=&quot;https://da-penguins.stoplight.io/studio/threaded-discussion?source=b5xrzjkw&amp;amp;symbol=%252Fp%252Freference%252Fapi.yaml%252Fpaths%252F%7E1get-comment%252Fget&quot;&gt;here&lt;/a&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;User flows have been updated, with User Authentication being the only flow that has not been documented &lt;img src=&quot;https://user-images.githubusercontent.com/48635853/162653524-4ec45952-4179-4e2a-ae18-76ca32507c16.png&quot; alt=&quot;image&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;week-12&quot; tabindex=&quot;-1&quot;&gt;Week 12 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-12&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id=&quot;api-documentation&quot; tabindex=&quot;-1&quot;&gt;API Documentation &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#api-documentation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on &lt;a href=&quot;https://da-penguins.stoplight.io/docs/threaded-discussion&quot;&gt;stoplight&lt;/a&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;work-completed-this-week&quot; tabindex=&quot;-1&quot;&gt;Work Completed This Week &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#work-completed-this-week&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;work-completed-this-week-1&quot; tabindex=&quot;-1&quot;&gt;Work Completed This Week &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#work-completed-this-week-1&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;h4 id=&quot;backend:&quot; tabindex=&quot;-1&quot;&gt;Backend: &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#backend:&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Added backend logic for 4 CRUD related operations for each comment
