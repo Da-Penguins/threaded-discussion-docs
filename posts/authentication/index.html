@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <meta name="description" content="Discusses how user authentication is handled">
+    <link rel="stylesheet" href="/threaded-discussion-docs/css/index.css">
+    <link rel="stylesheet" href="/threaded-discussion-docs/css/prism-base16-monokai.dark.css">
+    <link rel="stylesheet" href="/threaded-discussion-docs/css/prism-diff.css">
+    <link rel="alternate" href="/threaded-discussion-docs/feed/feed.xml" type="application/atom+xml" title="Threaded Discussion Documentation">
+    <link rel="alternate" href="/threaded-discussion-docs/feed/feed.json" type="application/json" title="Threaded Discussion Documentation">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/threaded-discussion-docs/">Threaded Discussion Documentation</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/threaded-discussion-docs/">Home</a></li>
+        <li class="nav-item"><a href="/threaded-discussion-docs/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/threaded-discussion-docs/about/">About Us</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+      <h1>Authentication</h1>
+<h3><i>Discusses how user authentication is handled</i></h3>
+
+<time datetime="2022-04-10">10 Apr 2022</time><a href="/threaded-discussion-docs/tags/info/" class="post-tag">Info</a>
+
+<p>The user authentication service delivered by the <code>/auth</code> endpoint models an authentication service that would be available to connect the threaded-discussion application to other enterprise JWT based authentication platforms.</p>
+<h2 id="component" tabindex="-1">Component <a class="direct-link" href="#component" aria-hidden="true">#</a></h2>
+<p>The <code>&lt;jwt-auth&gt;</code> web component allows users to log in to the authentication service. This authentication endpoint is defined by the <code>authendpoint</code> property of the tag. The state flow of the tag is as follows:</p>
+<ol>
+<li>The tag checks LocalStorage for a JWT in the <code>comment-jwt</code> tag. If the value is present, the tag enters the &quot;authenticated&quot; state and emits an <code>auth-success</code> event.</li>
+<li>The tag is rendered on the page. If the tag is in the authenticated state, the tag does not appear. If the tag is not in the authenticated state, it displays a login prompt on the screen</li>
+<li>The user authenticates with the authentication service.</li>
+<li>The tag receives the JWT returned by the service and creates a new localStorage entry under <code>comment-jwt</code>. At this point the tag enters the authenticated state and emits an <code>auth-success</code> event.</li>
+</ol>
+<p>The component is integrated into the <code>threaded-discussion</code> component by adding placing the <code>jwt-auth</code> component inside it and adding an event listener to the parent for <code>auth-success</code> events. Listening to these events allows the comment engine to enable/disable itself.</p>
+<p><a href="https://github.com/mayormaier/jwt-auth-component">View the component source code here</a><br>
+<a href="https://www.npmjs.com/package/jwt-auth-component">View the npm package here</a></p>
+<h2 id="security-considerations" tabindex="-1">Security Considerations <a class="direct-link" href="#security-considerations" aria-hidden="true">#</a></h2>
+<p>At the current moment, there are some serious security considerations with this component. Firstly, there is no password field on the login page. This is problematic for obvious reasons.</p>
+<p>In reading, I found multiple sources reporting that it is insecure to store JWTs directly in LocalStorage. There are alternative methods to prevent against XSS and CSRF attacks. These should be investigated in the future</p>
+<p>There is no support currently for MFA, although this would most likely be implemented by the authentication provider.</p>
+
+<hr>
+<ul><li>Next: <a href="/threaded-discussion-docs/posts/notes/">Notes</a></li><li>Previous: <a href="/threaded-discussion-docs/posts/our-project/">Our Project</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /threaded-discussion-docs/posts/authentication/ -->
+  </body>
+</html>

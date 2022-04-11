@@ -97,6 +97,30 @@
 	</entry>
 	
 	<entry>
+		<title>Authentication</title>
+		<link href="https://example.com/threaded-discussion-docs/posts/authentication/"/>
+		<updated>2022-04-10T00:00:00Z</updated>
+		<id>https://example.com/threaded-discussion-docs/posts/authentication/</id>
+		<content type="html">&lt;p&gt;The user authentication service delivered by the &lt;code&gt;/auth&lt;/code&gt; endpoint models an authentication service that would be available to connect the threaded-discussion application to other enterprise JWT based authentication platforms.&lt;/p&gt;
+&lt;h2 id=&quot;component&quot; tabindex=&quot;-1&quot;&gt;Component &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/authentication/#component&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;lt;jwt-auth&amp;gt;&lt;/code&gt; web component allows users to log in to the authentication service. This authentication endpoint is defined by the &lt;code&gt;authendpoint&lt;/code&gt; property of the tag. The state flow of the tag is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The tag checks LocalStorage for a JWT in the &lt;code&gt;comment-jwt&lt;/code&gt; tag. If the value is present, the tag enters the &amp;quot;authenticated&amp;quot; state and emits an &lt;code&gt;auth-success&lt;/code&gt; event.&lt;/li&gt;
+&lt;li&gt;The tag is rendered on the page. If the tag is in the authenticated state, the tag does not appear. If the tag is not in the authenticated state, it displays a login prompt on the screen&lt;/li&gt;
+&lt;li&gt;The user authenticates with the authentication service.&lt;/li&gt;
+&lt;li&gt;The tag receives the JWT returned by the service and creates a new localStorage entry under &lt;code&gt;comment-jwt&lt;/code&gt;. At this point the tag enters the authenticated state and emits an &lt;code&gt;auth-success&lt;/code&gt; event.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The component is integrated into the &lt;code&gt;threaded-discussion&lt;/code&gt; component by adding placing the &lt;code&gt;jwt-auth&lt;/code&gt; component inside it and adding an event listener to the parent for &lt;code&gt;auth-success&lt;/code&gt; events. Listening to these events allows the comment engine to enable/disable itself.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/mayormaier/jwt-auth-component&quot;&gt;View the component source code here&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.npmjs.com/package/jwt-auth-component&quot;&gt;View the npm package here&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;security-considerations&quot; tabindex=&quot;-1&quot;&gt;Security Considerations &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/authentication/#security-considerations&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;At the current moment, there are some serious security considerations with this component. Firstly, there is no password field on the login page. This is problematic for obvious reasons.&lt;/p&gt;
+&lt;p&gt;In reading, I found multiple sources reporting that it is insecure to store JWTs directly in LocalStorage. There are alternative methods to prevent against XSS and CSRF attacks. These should be investigated in the future&lt;/p&gt;
+&lt;p&gt;There is no support currently for MFA, although this would most likely be implemented by the authentication provider.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
 		<title>Our Project</title>
 		<link href="https://example.com/threaded-discussion-docs/posts/our-project/"/>
 		<updated>2022-03-20T00:00:00Z</updated>
