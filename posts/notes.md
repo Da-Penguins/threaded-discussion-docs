@@ -1,13 +1,20 @@
 ---
 title: Notes
 description: Notes taken in threaded-discussion's early design phases. 
-date: 2022-04-03
+date: 2022-04-10
 tags:
   - Info
   - Design
 layout: layouts/post.njk
 ---
+## Week 13 ##
 
+### Work Completed This Week ###
+- Significant updates to user interface
+- Implemented user authentication and session validation via `/auth` endpoint
+- Tie user credential checks into other API endpoints
+- API Documentation is complete and available **_[here](https://da-penguins.stoplight.io/studio/threaded-discussion?source=b5xrzjkw&symbol=%252Fp%252Freference%252Fapi.yaml%252Fpaths%252F%7E1get-comment%252Fget)_**
+- User flows have been updated, with User Authentication being the only flow that has not been documented ![image](https://user-images.githubusercontent.com/48635853/162653524-4ec45952-4179-4e2a-ae18-76ca32507c16.png)
 ## Week 12 ##
 ### API Documentation ###
 OpenAPI Documentation, including names, functionality, query parameters, and sample return data can be viewed on [stoplight](https://da-penguins.stoplight.io/docs/threaded-discussion).
