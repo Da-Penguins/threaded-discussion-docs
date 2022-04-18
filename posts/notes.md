@@ -7,6 +7,38 @@ tags:
   - Design
 layout: layouts/post.njk
 ---
+
+## Week 14 ##
+- What's done:
+  - Backend:
+    - Database is fully set up and persists data 
+    - CRUD functionality and all API endpoints setup
+    - Support for multiple threads and pervasive data storage
+    - Comments have been set up to return chronologically based on most recent
+  - Frontend:
+    - Sign-in page with what's your name input
+    - General design for comment structure and threaded-discussion tag have been created
+    - Buttons that facilitate API calls for CRUD functionality on comment data
+  - API/Documentation:
+    - OpenAPI documentation has been published
+    - Workflow diagrams for all API endpoints
+    - 11ty Documentation site is up to date
+- What's left:
+  - Backend:
+    - Error handling with JWT generation and user authentication
+    - Cleaning API returns for easier translation to frontend
+    - Verifying that domain validation is completely functional
+  - Frontend:
+    - Visually present all comments on page 
+    - Create visual representation for replies
+    - Finish main comment structure (working through implementation of icons and content display)
+    - Verify that UUID management is working properly
+  - API/Documentation: 
+    - Keep 11ty documenation up to date
+    - Update Auth endpoint workflow based on backend's final decisions with JWT Auth
+- Questions:
+  - Having trouble conceptualizing management of different threads on frontend (not visually but in the code), any advice/recommendation is welcome!
+  - Async calls to API end up showing empty comments that just have a "promise" object to start. Other than going synchronous, is there any way to stop the comment HTML from generating until the comment data is fetched? (e.g. a timeout or something similar?)
 ## Week 13 ##
 
 ### Work Completed This Week ###
