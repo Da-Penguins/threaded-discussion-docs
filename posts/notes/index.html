@@ -27,6 +27,66 @@
 
 <time datetime="2022-04-10">10 Apr 2022</time><a href="/threaded-discussion-docs/tags/info/" class="post-tag">Info</a><a href="/threaded-discussion-docs/tags/design/" class="post-tag">Design</a>
 
+<h2 id="week-14" tabindex="-1">Week 14 <a class="direct-link" href="#week-14" aria-hidden="true">#</a></h2>
+<ul>
+<li>What's done:
+<ul>
+<li>Backend:
+<ul>
+<li>Database is fully set up and persists data</li>
+<li>CRUD functionality and all API endpoints setup</li>
+<li>Support for multiple threads and pervasive data storage</li>
+<li>Comments have been set up to return chronologically based on most recent</li>
+</ul>
+</li>
+<li>Frontend:
+<ul>
+<li>Sign-in page with what's your name input</li>
+<li>General design for comment structure and threaded-discussion tag have been created</li>
+<li>Buttons that facilitate API calls for CRUD functionality on comment data</li>
+</ul>
+</li>
+<li>API/Documentation:
+<ul>
+<li>OpenAPI documentation has been published</li>
+<li>Workflow diagrams for all API endpoints</li>
+<li>11ty Documentation site is up to date</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>What's left:
+<ul>
+<li>Backend:
+<ul>
+<li>Error handling with JWT generation and user authentication</li>
+<li>Cleaning API returns for easier translation to frontend</li>
+<li>Verifying that domain validation is completely functional</li>
+</ul>
+</li>
+<li>Frontend:
+<ul>
+<li>Visually present all comments on page</li>
+<li>Create visual representation for replies</li>
+<li>Finish main comment structure (working through implementation of icons and content display)</li>
+<li>Verify that UUID management is working properly</li>
+</ul>
+</li>
+<li>API/Documentation:
+<ul>
+<li>Keep 11ty documenation up to date</li>
+<li>Update Auth endpoint workflow based on backend's final decisions with JWT Auth</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Questions:
+<ul>
+<li>Having trouble conceptualizing management of different threads on frontend (not visually but in the code), any advice/recommendation is welcome!</li>
+<li>Async calls to API end up showing empty comments that just have a &quot;promise&quot; object to start. Other than going synchronous, is there any way to stop the comment HTML from generating until the comment data is fetched? (e.g. a timeout or something similar?)</li>
+</ul>
+</li>
+</ul>
 <h2 id="week-13" tabindex="-1">Week 13 <a class="direct-link" href="#week-13" aria-hidden="true">#</a></h2>
 <h3 id="work-completed-this-week" tabindex="-1">Work Completed This Week <a class="direct-link" href="#work-completed-this-week" aria-hidden="true">#</a></h3>
 <ul>
@@ -105,7 +165,7 @@
 </ul>
 
 <hr>
-<ul><li>Previous: <a href="/threaded-discussion-docs/posts/authentication/">Authentication</a></li>
+<ul><li>Previous: <a href="/threaded-discussion-docs/posts/our-project/">Our Project</a></li>
 </ul>
 
     </main>
