@@ -7,6 +7,21 @@ tags:
   - Design
 layout: layouts/post.njk
 ---
+## Week 15 ##
+- What's left:
+  - Fixing the width of cards for scaling
+  - Review class feedback and implement 
+    - Make threads collapsable
+    - Refreshing errors
+    - Scalable with browser size
+    - Hearts turn red
+    - Dark mode
+    - Navigation difficulty
+    - Fix button color
+    - Add html header
+    - Make use of white space
+    - Only the writer can edit and delete a comment
+    - Icons
 
 ## Week 14 ##
 - What's done:
