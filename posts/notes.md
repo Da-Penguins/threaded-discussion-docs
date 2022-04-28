@@ -22,6 +22,8 @@ layout: layouts/post.njk
     - Make use of white space
     - Only the writer can edit and delete a comment
     - Icons
+  - Final User Flow Diagram
+  - ![402userflow drawio (1)](https://user-images.githubusercontent.com/54961655/165807945-e929e4a5-d074-4685-b26e-e93b4b1bc6f2.png)
 
 ## Week 14 ##
 - What's done:
