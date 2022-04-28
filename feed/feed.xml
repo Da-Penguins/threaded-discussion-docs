@@ -17,7 +17,30 @@
 		<link href="https://example.com/threaded-discussion-docs/posts/notes/"/>
 		<updated>2022-04-10T00:00:00Z</updated>
 		<id>https://example.com/threaded-discussion-docs/posts/notes/</id>
-		<content type="html">&lt;h2 id=&quot;week-14&quot; tabindex=&quot;-1&quot;&gt;Week 14 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-14&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<content type="html">&lt;h2 id=&quot;week-15&quot; tabindex=&quot;-1&quot;&gt;Week 15 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-15&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What&#39;s left:
+&lt;ul&gt;
+&lt;li&gt;Fixing the width of cards for scaling&lt;/li&gt;
+&lt;li&gt;Review class feedback and implement
+&lt;ul&gt;
+&lt;li&gt;Make threads collapsable&lt;/li&gt;
+&lt;li&gt;Refreshing errors&lt;/li&gt;
+&lt;li&gt;Scalable with browser size&lt;/li&gt;
+&lt;li&gt;Hearts turn red&lt;/li&gt;
+&lt;li&gt;Dark mode&lt;/li&gt;
+&lt;li&gt;Navigation difficulty&lt;/li&gt;
+&lt;li&gt;Fix button color&lt;/li&gt;
+&lt;li&gt;Add html header&lt;/li&gt;
+&lt;li&gt;Make use of white space&lt;/li&gt;
+&lt;li&gt;Only the writer can edit and delete a comment&lt;/li&gt;
+&lt;li&gt;Icons&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;week-14&quot; tabindex=&quot;-1&quot;&gt;Week 14 &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/notes/#week-14&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;What&#39;s done:
 &lt;ul&gt;
