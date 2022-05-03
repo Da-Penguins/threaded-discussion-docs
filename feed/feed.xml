@@ -5,12 +5,32 @@
 	
 	<link href="https://example.com/threaded-discussion-docs/feed/feed.xml" rel="self"/>
 	<link href="https://example.com/"/>
-	<updated>2022-04-10T00:00:00Z</updated>
+	<updated>2022-05-03T00:00:00Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>Da-Penguins</name>
 		<email></email>
 	</author>
+	
+	<entry>
+		<title>Multithreading</title>
+		<link href="https://example.com/threaded-discussion-docs/posts/multi-thread/"/>
+		<updated>2022-05-03T00:00:00Z</updated>
+		<id>https://example.com/threaded-discussion-docs/posts/multi-thread/</id>
+		<content type="html">&lt;p&gt;The &lt;code&gt;threaded-discussion&lt;/code&gt; web component enables users to place multiple comment blocks on a single page- each with their own set of comments that are completely isolated from each other.&lt;/p&gt;
+&lt;h2 id=&quot;what-makes-discussions-unique&quot; tabindex=&quot;-1&quot;&gt;What makes discussions unique? &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/multi-thread/#what-makes-discussions-unique&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Each thread has a unique id which is referenced by the &lt;code&gt;uid&lt;/code&gt; attribute (ThreadID property) of the component. Threads must be created outside of the page that they were placed on, so that the component can be inserted onto the destination HTML page on the server-side.&lt;/p&gt;
+&lt;p&gt;Note that in the demo, the &lt;code&gt;&amp;lt;thread-creator&amp;gt;&lt;/code&gt; component accomplishes this task of creating threads- although the threads that it creates are short lived, and will be removed from the DOM when the page reloads. This &lt;code&gt;&amp;lt;thread-creator&amp;gt;&lt;/code&gt; component interacts with the &lt;code&gt;create-thread&lt;/code&gt; API to create the thread record in the database.&lt;/p&gt;
+&lt;p&gt;After the API creates the database record for the new comment thread, it returns the ID of the thread as well as the valid domain and permissions for validation by the front end.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: New threads may only be created by admin users. Use the following JWT in the &lt;code&gt;comment-jwt&lt;/code&gt; value in LocalStorage to test this feature.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Additionally, note that the creation of new threads does not occur automatically when the component is placed on a page/rendered. In a production scenario, a separate system (i.e., WYSISYG editor) would work to generate these new threads and insert their respective UUIDs into the &lt;code&gt;&amp;lt;threaded-discussion&amp;gt;&lt;/code&gt; &lt;code&gt;uid&lt;/code&gt; attribute.&lt;/p&gt;
+&lt;h2 id=&quot;how-are-discussions-tied-to-a-particular-page&quot; tabindex=&quot;-1&quot;&gt;How are discussions tied to a particular page? &lt;a class=&quot;direct-link&quot; href=&quot;https://example.com/threaded-discussion-docs/posts/multi-thread/#how-are-discussions-tied-to-a-particular-page&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;When the thread is created, the client must provide the &lt;code&gt;href&lt;/code&gt; of the page where the discussion will be placed. This value is checked against the &lt;code&gt;referrer&lt;/code&gt; header of an incoming web request- so that the tag can only be placed on authorized pages.&lt;/p&gt;
+&lt;p&gt;In the demo, discussion block 3 is not visible to users as it is tied to the &lt;code&gt;localhost:3000/&lt;/code&gt; page. Thus, the element is unable to load the comments from this discussion with the &lt;code&gt;get-comment&lt;/code&gt; API unless the &lt;code&gt;referrer&lt;/code&gt; header of the request is &lt;code&gt;localhost:3000/&lt;/code&gt;. On the other hand, discussions one and two in the demo are visible, as they are not tied to any page. So, when the comments for these discussions are requested, they are able to load.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Notes</title>

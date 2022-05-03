@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multithreading</title>
+    <meta name="description" content="How does &lt;threaded-discussion&gt; enable the user to use multiple comment blocks on a single page?">
+    <link rel="stylesheet" href="/threaded-discussion-docs/css/index.css">
+    <link rel="stylesheet" href="/threaded-discussion-docs/css/prism-base16-monokai.dark.css">
+    <link rel="stylesheet" href="/threaded-discussion-docs/css/prism-diff.css">
+    <link rel="alternate" href="/threaded-discussion-docs/feed/feed.xml" type="application/atom+xml" title="Threaded Discussion Documentation">
+    <link rel="alternate" href="/threaded-discussion-docs/feed/feed.json" type="application/json" title="Threaded Discussion Documentation">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="/threaded-discussion-docs/">Threaded Discussion Documentation</a></h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="/threaded-discussion-docs/">Home</a></li>
+        <li class="nav-item"><a href="/threaded-discussion-docs/posts/">Archive</a></li>
+        <li class="nav-item"><a href="/threaded-discussion-docs/about/">About Us</a></li>
+      </ul>
+    </header>
+
+    <main class="tmpl-post">
+      <h1>Multithreading</h1>
+<h3><i>How does &lt;threaded-discussion&gt; enable the user to use multiple comment blocks on a single page?</i></h3>
+
+<time datetime="2022-05-03">03 May 2022</time><a href="/threaded-discussion-docs/tags/info/" class="post-tag">Info</a>
+
+<p>The <code>threaded-discussion</code> web component enables users to place multiple comment blocks on a single page- each with their own set of comments that are completely isolated from each other.</p>
+<h2 id="what-makes-discussions-unique" tabindex="-1">What makes discussions unique? <a class="direct-link" href="#what-makes-discussions-unique" aria-hidden="true">#</a></h2>
+<p>Each thread has a unique id which is referenced by the <code>uid</code> attribute (ThreadID property) of the component. Threads must be created outside of the page that they were placed on, so that the component can be inserted onto the destination HTML page on the server-side.</p>
+<p>Note that in the demo, the <code>&lt;thread-creator&gt;</code> component accomplishes this task of creating threads- although the threads that it creates are short lived, and will be removed from the DOM when the page reloads. This <code>&lt;thread-creator&gt;</code> component interacts with the <code>create-thread</code> API to create the thread record in the database.</p>
+<p>After the API creates the database record for the new comment thread, it returns the ID of the thread as well as the valid domain and permissions for validation by the front end.</p>
+<blockquote>
+<p>NOTE: New threads may only be created by admin users. Use the following JWT in the <code>comment-jwt</code> value in LocalStorage to test this feature.</p>
+</blockquote>
+<p>Additionally, note that the creation of new threads does not occur automatically when the component is placed on a page/rendered. In a production scenario, a separate system (i.e., WYSISYG editor) would work to generate these new threads and insert their respective UUIDs into the <code>&lt;threaded-discussion&gt;</code> <code>uid</code> attribute.</p>
+<h2 id="how-are-discussions-tied-to-a-particular-page" tabindex="-1">How are discussions tied to a particular page? <a class="direct-link" href="#how-are-discussions-tied-to-a-particular-page" aria-hidden="true">#</a></h2>
+<p>When the thread is created, the client must provide the <code>href</code> of the page where the discussion will be placed. This value is checked against the <code>referrer</code> header of an incoming web request- so that the tag can only be placed on authorized pages.</p>
+<p>In the demo, discussion block 3 is not visible to users as it is tied to the <code>localhost:3000/</code> page. Thus, the element is unable to load the comments from this discussion with the <code>get-comment</code> API unless the <code>referrer</code> header of the request is <code>localhost:3000/</code>. On the other hand, discussions one and two in the demo are visible, as they are not tied to any page. So, when the comments for these discussions are requested, they are able to load.</p>
+
+<hr>
+<ul><li>Previous: <a href="/threaded-discussion-docs/posts/notes/">Notes</a></li>
+</ul>
+
+    </main>
+
+    <footer></footer>
+
+    <!-- Current page: /threaded-discussion-docs/posts/multi-thread/ -->
+  </body>
+</html>
