@@ -33,7 +33,8 @@
 <p>Note that in the demo, the <code>&lt;thread-creator&gt;</code> component accomplishes this task of creating threads- although the threads that it creates are short lived, and will be removed from the DOM when the page reloads. This <code>&lt;thread-creator&gt;</code> component interacts with the <code>create-thread</code> API to create the thread record in the database.</p>
 <p>After the API creates the database record for the new comment thread, it returns the ID of the thread as well as the valid domain and permissions for validation by the front end.</p>
 <blockquote>
-<p>NOTE: New threads may only be created by admin users. Use the following JWT in the <code>comment-jwt</code> value in LocalStorage to test this feature.</p>
+<p>NOTE: New threads may only be created by admin users. Use the following JWT in the <code>comment-jwt</code> value in LocalStorage to test this feature.<br>
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRlbW8tYWRtaW4iLCJ1aWQiOiIxMjU4ZDIwYy00NGQ3LTRlNGMtODlhYy0zMTE1YmM4YmUwNjYiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2NTE2MjUyNDZ9.XyoPq4xliV7s-467G-U4dHv7_yiFxJAqIewLFJR60yM</p>
 </blockquote>
 <p>Additionally, note that the creation of new threads does not occur automatically when the component is placed on a page/rendered. In a production scenario, a separate system (i.e., WYSISYG editor) would work to generate these new threads and insert their respective UUIDs into the <code>&lt;threaded-discussion&gt;</code> <code>uid</code> attribute.</p>
 <h2 id="how-are-discussions-tied-to-a-particular-page" tabindex="-1">How are discussions tied to a particular page? <a class="direct-link" href="#how-are-discussions-tied-to-a-particular-page" aria-hidden="true">#</a></h2>
